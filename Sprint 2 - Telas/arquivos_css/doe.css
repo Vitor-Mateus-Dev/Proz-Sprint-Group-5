@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* Inicio Header, parte superior da página**********************/
+header {
+  background-image: url(/Imagens/Header.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  height: 120px;
+}
+#aqui {
+  color: #fda7df;
+}
+header div nav {
+  color: white;
+}
+
+#nav-bar {
+  width: 100%;
+  justify-content: center;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+  padding-top: 35px;
+  margin-right: 50px;
+}
+
+header li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #4f96e0;
+  color: white;
+}
+/* Final Header, parte superior da página***********************/
+
+/* Inicio main*************************************************/
+main {
+  background-color: #d4e4bc;
+  margin: 0 auto;
+  height: 485px;
+}
+.container {
+  margin: 0 50px;
+}
+section {
+  display: flex;
+}
+.divisao {
+  flex: 1;
+}
+/* Formatações de texto*/
+h1 {
+  color: #6d454c;
+  padding-top: 20px;
+}
+main div section p {
+  margin-top: 20px;
+  width: 250px;
+  color: #585957;
+  font-size: 18px;
+}
+main div section h2 {
+  color: #585957;
+  font-size: 25px;
+}
+main div section img {
+  position: static;
+  margin: 20px 0 0 0;
+  width: 300px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+/* Formatações meio*******************************************/
+.image {
+  display: none;
+  max-width: 250px;
+  max-height: 300px;
+  position: absolute;
+}
+input[type="radio"]:checked + label + .image {
+  display: block;
+}
+.imagem {
+  width: 300px;
+  height: 300px;
+  border-radius: 120px;
+}
+/* Ocultar radio */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+/* Novo radio */
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+/*  visual para o radio */
+input[type="radio"]:checked + label::before {
+  background-color: #ccc;
+}
+
+/* Formatações direita*************************************/
+.formu {
+  height: 400px;
+  width: 500px;
+  position: relative;
+  margin: 20px 0 0 0;
+}
+.formu label {
+  text-decoration: none;
+  color: #373c59;
+}
+.formu h3 {
+  margin-left: 90px;
+  color: #6d464c;
+  margin-bottom: 15px;
+}
+form {
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+}
+input[type="date"] {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+input[type="submit"] {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 5px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+/* Final main*************************************************/
+
+/* Inicio Parallax*************************************************/
+.parallax h3 {
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+}
+.parallax p {
+  margin-bottom: 20xp;
+  font-size: 20px;
+}
+.conteudo {
+  color: #777;
+  background-color: rgba(211, 211, 211, 0.5);
+  text-align: justify;
+  padding: 50px 80px;
+}
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.caixa1 {
+  background-image: url(/Imagens/gato4.jpg);
+  display: grid;
+  align-items: center;
+}
+.caixa2 {
+  background-image: url(/Imagens/gato5.jpg);
+}
+.caixa3 {
+  background-image: url(/Imagens/gato6.jpg);
+}
+.caixa4 {
+  background-image: url(/Imagens/gato7.jpeg);
+}
+
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+/* Final Parallax*************************************************/
+
+/* Inicio Footer*************************************************/
+footer {
+  position: absolute;
+  bottom: -3090px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #3083dc;
+}
+.footer-column {
+  width: 33.33%;
+  margin: 5px 0;
+}
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer img {
+  border-radius: 100px;
+}
+footer i {
+  margin: 30px 10px;
+  font-size: 20px;
+}
+footer p {
+  color: white;
+}
+footer div {
+  position: relative;
+  right: 50px;
+}
